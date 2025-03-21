@@ -1,29 +1,108 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Green Haven - Products</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
   <body>
     <!-- Kazi Md. Rakibul Hassan -->
     <!-- ID: 2220936 -->
     <header>
       <div class="logo">
-          <div class="logoimg">
-            <img id="logo" src="./assets/133741889_10237112.png" alt="" />
-            <h1>Green Heaven</h1>
-          </div>
-          <p>Bringing Nature Indoors</p>
+        <div class="logoimg">
+          <img id="logo" src="./assets/133741889_10237112.png" alt="" />
+          <h1>Green Heaven</h1>
         </div>
+        <p>Bringing Nature Indoors</p>
+      </div>
       <nav>
-          <ul class="nav-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="products.html" class="active">Products</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-          </ul>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
       </nav>
-  </header>
-  <script src="script.js" defer></script>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Transform Your Space with Nature</h2>
+          <p>
+            Discover premium plants that bring life, color, and fresh air to
+            your home and office.
+          </p>
+          <a href="products.html">
+            <button class="cta-button">Explore Collection</button>
+          </a>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=2342&auto=format&fit=crop"
+            alt="Assorted indoor plants"
+          />
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="feature-box">
+          <img
+            src="https://img.freepik.com/free-photo/plant-shop-business-owner-delivery-packaging_53876-128888.jpg?t=st=1742563007~exp=1742566607~hmac=acc3beb472893269aabc8b741705dbb2095724bbc7782f51a4690c8710052c22&w=1380"
+            alt="Plant delivery"
+          />
+          <h3>Free Delivery</h3>
+          <p>
+            Complimentary shipping on all orders above $50. Your plants arrive
+            safely and on time.
+          </p>
+        </div>
+        <div class="feature-box">
+          <img
+            src="https://img.freepik.com/free-photo/pretty-young-woman-watering-tree-garden-summer-sunny-day-woman-gardening-outside-summer-nature-farming-gardening-agriculture-people-concept_1150-45792.jpg?ga=GA1.1.979112555.1742562983&semt=ais_hybrid"
+            alt="Plant care guide"
+          />
+          <h3>Expert Care Guides</h3>
+          <p>
+            Each plant comes with a detailed care card to help your green
+            friends thrive.
+          </p>
+        </div>
+        <div class="feature-box">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg0QZ4IUP4EHqSyg6JGHkongS5Pj5TirO2CA&s"
+            alt="Plant guarantee"
+          />
+          <h3>30-Day Guarantee</h3>
+          <p>
+            We stand behind our plants. Not thriving? We'll replace it free of
+            charge.
+          </p>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-container">
+          <div class="testimonial">
+            <p>
+              "The snake plant I ordered arrived in perfect condition. It's been
+              thriving in my living room for months now!"
+            </p>
+            <p class="customer-name">- Sarah K.</p>
+          </div>
+          <div class="testimonial">
+            <p>
+              "Green Haven's selection is unmatched. I've ordered multiple times
+              and have always been impressed with the quality."
+            </p>
+            <p class="customer-name">- Michael T.</p>
+          </div>
+        </div>
+        <button class="secondary-button" onclick="showMoreTestimonials()">
+          View More Reviews
+        </button>
+      </section>
+    </main>
+    <script src="script.js" defer></script>
   </body>
 </html>
