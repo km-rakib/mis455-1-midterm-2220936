@@ -222,3 +222,32 @@ header:hover {
   object-fit: cover;
   margin-bottom: 1rem;
 }
+/* Testimonials Section */
+.testimonials {
+  background-color: #ebf5ec;
+  text-align: center;
+}
+
+.testimonial-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.testimonial {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.customer-name {
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #3a7d44;
+}
