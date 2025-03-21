@@ -1,30 +1,140 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Green Haven - Products</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
   <body>
-    <!-- Kazi Md. Rakibul Hassan -->
-    <!-- ID: 2220936 -->
     <header>
       <div class="logo">
-          <div class="logoimg">
-            <img id="logo" src="./assets/133741889_10237112.png" alt="" />
-            <h1>Green Heaven</h1>
-          </div>
-          <p>Bringing Nature Indoors</p>
+        <div class="logoimg">
+          <img id="logo" src="./assets/133741889_10237112.png" alt="" />
+          <h1>Green Heaven</h1>
         </div>
+        <p>Bringing Nature Indoors</p>
+      </div>
       <nav>
-          <ul class="nav-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="products.html" class="active">Products</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-          </ul>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
       </nav>
-  </header>
-  
-  <script src="script.js" defer></script>
+    </header>
+    <main>
+      <section class="product-header">
+        <h2>Our Plant Collection</h2>
+        <p>
+          Browse our carefully curated selection of indoor plants for every
+          space and light condition.
+        </p>
+      </section>
+      <section class="product-filters">
+        <div class="filter-group">
+          <label for="category-filter">Filter by:</label>
+          <select id="category-filter" title="Filter by category">
+            <option value="all">All Plants</option>
+            <option value="low-light">Low Light</option>
+            <option value="pet-friendly">Pet Friendly</option>
+            <option value="air-purifying">Air Purifying</option>
+          </select>
+        </div>
+        <button class="secondary-button" onclick="filterProducts()">
+          Apply Filter
+        </button>
+      </section>
+      <section class="product-grid">
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1611211232932-da3113c5b960?q=80&w=2370&auto=format&fit=crop"
+            alt="Snake Plant"
+          />
+          <h3>Snake Plant</h3>
+          <p>
+            Nearly indestructible and perfect for beginners. Thrives in low
+            light.
+          </p>
+          <p class="price">$24.99</p>
+          <button class="add-to-cart" onclick="addToCart('Snake Plant', 24.99)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=2264&auto=format&fit=crop"
+            alt="Monstera Deliciosa"
+          />
+          <h3>Monstera Deliciosa</h3>
+          <p>Known for its stunning split leaves and tropical feel.</p>
+          <p class="price">$39.99</p>
+          <button
+            class="add-to-cart"
+            onclick="addToCart('Monstera Deliciosa', 39.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1632207691143-643e2a9a9361?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="ZZ Plant"
+          />
+          <h3>ZZ Plant</h3>
+          <p>
+            Glossy leaves and incredibly drought-tolerant. Perfect for offices.
+          </p>
+          <p class="price">$29.99</p>
+          <button class="add-to-cart" onclick="addToCart('ZZ Plant', 29.99)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1596724878582-76f1a8fdc24f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG90aG9zfGVufDB8fDB8fHww"
+            alt="Pothos"
+          />
+          <h3>Pothos</h3>
+          <p>
+            Fast-growing trailing plant that's perfect for shelves and hanging
+            baskets.
+          </p>
+          <p class="price">$19.99</p>
+          <button class="add-to-cart" onclick="addToCart('Pothos', 19.99)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1620311497344-bce841c9c060?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVhY2UlMjBsaWx5fGVufDB8fDB8fHww"
+            alt="Peace Lily"
+          />
+          <h3>Peace Lily</h3>
+          <p>Elegant white flowers and air purifying qualities.</p>
+          <p class="price">$34.99</p>
+          <button class="add-to-cart" onclick="addToCart('Peace Lily', 34.99)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1453904300235-0f2f60b15b5d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8RmlkZGxlJTIwTGVhZiUyMEZpZ3xlbnwwfHwwfHx8MA%3D%3D"
+            alt="Fiddle Leaf Fig"
+          />
+          <h3>Fiddle Leaf Fig</h3>
+          <p>Statement plant with large, violin-shaped leaves.</p>
+          <p class="price">$49.99</p>
+          <button
+            class="add-to-cart"
+            onclick="addToCart('Fiddle Leaf Fig', 49.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
