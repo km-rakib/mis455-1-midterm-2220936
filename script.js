@@ -29,3 +29,7 @@ function checkout() {
   document.getElementById("cart-count").textContent = "0";
   document.getElementById("cart-total").textContent = "0.00";
 }
+
+function showMoreTestimonials() {
+  alert("This will load more reviews in future");
+}
