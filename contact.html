@@ -1,29 +1,159 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Haven - Products</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Haven - Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
   <body>
     <!-- Kazi Md. Rakibul Hassan -->
     <!-- ID: 2220936 -->
+
     <header>
       <div class="logo">
-          <div class="logoimg">
-            <img id="logo" src="./assets/133741889_10237112.png" alt="" />
-            <h1>Green Heaven</h1>
-          </div>
-          <p>Bringing Nature Indoors</p>
+        <div class="logoimg">
+          <img id="logo" src="./assets/133741889_10237112.png" alt="" />
+          <h1>Green Heaven</h1>
         </div>
+        <p>Bringing Nature Indoors</p>
+      </div>
       <nav>
-          <ul class="nav-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="products.html">Products</a></li>
-              <li><a href="contact.html" class="active">Contact Us</a></li>
-          </ul>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
       </nav>
-  </header>
-  <script src="script.js" defer></script>
+    </header>
+    <main>
+      <section class="contact-header">
+        <h2>Get In Touch</h2>
+        <p>
+          Have questions about plant care, shipping, or want to place a special
+          order? We're here to help!
+        </p>
+        <div class="contact-options">
+          <div class="contact-option">
+            <h3>Email Us</h3>
+            <p>For general inquiries: hello@greenhaven.com</p>
+            <p>For order support: orders@greenhaven.com</p>
+          </div>
+          <div class="contact-option">
+            <h3>Call Us</h3>
+            <p>Customer Service: (555) 123-4567</p>
+            <p>Business Hours: Mon-Fri, 9am-5pm PST</p>
+          </div>
+          <div class="contact-option">
+            <h3>Visit Us</h3>
+            <p>123 Plant Street</p>
+            <p>Greenville, CA 90210</p>
+          </div>
+        </div>
+      </section>
+      <section class="contact-form-section">
+        <div class="form-container">
+          <h3>Send Us a Message</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="inquiry">General Inquiry</option>
+                <option value="order">Order Question</option>
+                <option value="care">Plant Care Help</option>
+                <option value="wholesale">Wholesale/Bulk Order</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="button" class="cta-button">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-image">
+          <img
+            src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=2370&auto=format&fit=crop"
+            alt="Green Haven plant store"
+          />
+          <p>Our plant experts are ready to assist you with any questions.</p>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h4>What's your shipping policy?</h4>
+            <p>
+              We offer free shipping on all orders over $50. Standard shipping
+              takes 3-5 business days. We ship Monday-Wednesday to ensure plants
+              don't sit in transit over the weekend.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>What if my plant arrives damaged?</h4>
+            <p>
+              Contact us within 24 hours with photos of the damaged plant, and
+              we'll send a replacement or issue a refund at no additional cost
+              to you.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>Do you offer international shipping?</h4>
+            <p>
+              Currently, we only ship within the continental United States due
+              to agricultural import regulations.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>Can I pick up my order in-store?</h4>
+            <p>
+              Yes! Select "Store Pickup" at checkout, and we'll notify you when
+              your order is ready for collection.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Green Haven</h3>
+          <p>Your trusted source for premium indoor plants since 2015.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p>Email: hello@greenhaven.com</p>
+          <p>Phone: (555) 123-4567</p>
+          <p>Address: 123 Plant St, Greenville, CA</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Green Haven. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
   </body>
 </html>
